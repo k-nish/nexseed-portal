@@ -26,18 +26,8 @@
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
 
-<script type="text/javascript">
-  function check(id){
-    if (confirm('入力いただいた内容を登録しますがよろしいですか。')) {
-      return true;
-      location.href = 'check.html';
-    }else{
-      return false;
-    }
-  }
-</script>
 </head>
-
+  
 <body data-spy="scroll" data-target="#navbar-scroll">
 	<!-- さとしさん担当 -->
 <div id="menu">
@@ -55,7 +45,9 @@
 	 		<!-- NAVIGATION -->
 			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
 				<ul class="nav navbar-nav">
-					<li><a href="#intro">TOP</a></li>
+					<li><a href="../index.html">TOP</a>
+					<!-- <button type="button" class="btn btn-danger">TOP</button> -->
+				    </li>
 				</ul>
 			  </div>
 		</div>
@@ -69,10 +61,13 @@
 
 <!-- /.parallax full screen background image -->
 <div class="fullscreen landing parallax" style="background-image:url('../images/top_image.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+	
 	<div class="overlay">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
+
+
 
 					<!-- /.main title -->
 						<h1 class="wow fadeInLeft">
@@ -90,6 +85,7 @@
 					</div>
 
 				</div>
+
 				<!-- /.signup form -->
 				<div class="col-md-5">
 				<!-- さとしさん担当 -->
@@ -104,42 +100,48 @@
 							</div>
 							<div class="form-group">
 								<!-- <h3>Email</h3> -->
-								<input class="form-control input-lg" name="password" type="email" placeholder="Email address" required>
+								<input class="form-control input-lg" name="Email" type="text" placeholder="Email address" required>
 							</div>
 							<div class="form-group">
 								<!-- <h3>Password</h3> -->
-								<input class="form-control input-lg" name="password" type="text" placeholder="Password" required>
+								<input class="form-control input-lg" name="password1" type="text" placeholder="Password" required>
 							</div>
-							<!-- <div class="form-group last"> -->
-							<a href="index.html?action=rewrite">&laquo;&nbsp;書き直す</a> |
+							<div class="form-group">
+								<!-- <h3>Password(for check)</h3> -->
+								<input class="form-control input-lg" name="password2" type="text" placeholder="Password(for check)" required>
+							</div>
 							<div class="form-group last">
- 							<input type="submit" onclick="check()" class="btn btn-warning btn-block btn-lg" value="Sign Up!" style="margin-left:5px; float:left;">
- 								<!-- <a href="#" onclick="check"><i class="fa fa-trash-o"></i></a> -->
+								<!-- <input type="submit" class="btn btn-warning btn-block btn-lg" value="Register" style="margin-left:5px; float:left;"> -->
+ 								<input type="submit" class="btn btn-warning btn-block btn-lg" value="Enter!" style="margin-left:5px; float:left;">
+ 								<!-- <input type="submit" class="btn btn-warning btn-block btn-lg" style="margin-left:5px; float:left;"> -->
+ 								<!-- <a href="check.html">Sign Up!</a> -->
 							</div>
 						</form>
 					</div>
 				<!-- さとしさん担当終わり -->
 				</div>
 			</div>
-		</div>
-	</div>
+		</div> 
+	</div> 
 </div>
-
+ 
 
 
 
 <!-- /.intro section -->
 <!-- <div id="intro">
 	<div class="container">
-		<div class="row"> -->
+		<div class="row">-->
+			
 			<!-- /.intro content -->
-			<!-- <div class="col-md-6 wow slideInRight">
+			<!--<div class="col-md-6 wow slideInRight">
 				<h2>情報を探す</h2>
 				<p></p>
 
 					<div class="btn-section"><a href="#feature" class="btn-default">Learn More</a></div>
+		
 			</div>
-		</div>
+		</div>			  
 	</div>
 </div> -->
 
@@ -161,8 +163,8 @@
 			</div>
 		</div>
 	</div>
-</div>
- -->
+</div> -->
+
 
 
 
@@ -176,8 +178,8 @@
 			</div>	
 		</div>
 	</div>
-</div>
- -->
+</div> -->
+
 
 <!-- /.testimonial section -->
 <!-- <div id="testi">
@@ -187,19 +189,22 @@
 			<div class="title-line wow fadeInRight"></div>
 		</div>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-10 col-sm-offset-1">	
 			   <div id="owl-testi" class="owl-carousel owl-theme wow fadeInUp">
 				  -->
 					<!-- /.testimonial 1 -->
 					<!-- <div class="testi-item">
 						<div class="box"> -->
+						
 							<!-- /.testimonial content -->
-							<!-- <p class="message text-center">ここに最新コメント表示する</p>
+							<<!-- p class="message text-center">ここに最新コメント表示する</p>
 						</div>
 					</div>
+						
+				 
 				</div>
-			</div>
-		</div>
+			</div>	
+		</div>	
 	</div>
 </div> -->
 <!-- /.footer -->
@@ -209,18 +214,18 @@
 			<!-- /.social links -->
 				<div class="social text-center">
 					<ul>
-						<li><a class="wow fadeInUp" href="https://twitter.com/NexSeed_Cebu"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
 						<li><a class="wow fadeInUp" href="https://www.facebook.com/" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
-						<!-- <li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li> -->
-						<!-- <li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a></li> -->
+						<!-- <li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a></li> -->
 					</ul>
-				</div>
+				</div>	
 			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright Backyard 2015 - Template by <a href="http://www.moxdesign.com">MoxDesign</a></div>
 			<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
-		</div>
-	</div>
+		</div>	
+	</div>	
 </footer>
-
+	
 	<!-- /.javascript files -->
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
